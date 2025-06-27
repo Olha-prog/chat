@@ -7,10 +7,19 @@
     </head>
     <body>
         <main>
-           <h1 class="header">RoboChat</h1>
+            <header class="header">
+                <h1>RoboChat</h1>
+                <button class="link" id="logout-btn">Logout</button>
+            </header>
            <ul id="messages">
-            <li>Test Message</li>
-            <li>Hello! Test message 2</li>
+            <li>
+                <img class="photo" src="https://cdnb.artstation.com/p/assets/images/images/002/255/941/large/olha-boiko-robo-cat.jpg">
+                <span class="msg">Test Message</span>
+            </li>
+            <li>
+                <img class="photo" src="https://cdnb.artstation.com/p/assets/images/images/002/255/941/large/olha-boiko-robo-cat.jpg">
+                <span class="msg">Hello! Test message 2</span>
+            </li>
            </ul> 
            <form id="form">
             <input type="text" id="input" placeholder="Enter message...">
@@ -18,5 +27,6 @@
            </form>
         </main>
     </body>
+    <script src="https://cdn.socket.io/4.8.1/socket.io.min.js" integrity="sha384-mkQ3/7FUtcGyoppY6bz/PORYoGqOl7/aSUMn2ymDOJcapfS6PHqxhRTMh1RR0Q6+" crossorigin="anonymous"></script>
     <script src="script.js"></script>
 </html>
